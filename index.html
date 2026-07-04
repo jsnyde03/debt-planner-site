@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paycheck Debt Planner</title>
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.65;
+            color: #1a2332;
+            background: #f5f8fc;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background: #0f1f35;
+            color: #fff;
+            padding: 64px 24px 56px;
+            text-align: center;
+        }
+
+        header .wordmark {
+            font-size: 0.85rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            opacity: 0.6;
+            margin-bottom: 12px;
+        }
+
+        header h1 {
+            font-size: 2.1rem;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            margin-bottom: 12px;
+        }
+
+        header p { font-size: 0.95rem; opacity: 0.7; max-width: 460px; margin: 0 auto; }
+
+        main {
+            max-width: 640px;
+            margin: 0 auto;
+            padding: 48px 24px 40px;
+            flex: 1;
+            width: 100%;
+        }
+
+        .cards { display: grid; gap: 16px; }
+
+        a.card {
+            display: block;
+            background: #fff;
+            border-radius: 14px;
+            border: 1px solid #e4eaf2;
+            padding: 26px 28px;
+            text-decoration: none;
+            color: inherit;
+            transition: border-color 0.15s, transform 0.15s;
+        }
+
+        a.card:hover { border-color: #2563eb; transform: translateY(-2px); }
+
+        a.card h2 { font-size: 1.15rem; font-weight: 800; color: #0f1f35; margin-bottom: 6px; }
+        a.card p { font-size: 0.92rem; color: #2e3f54; margin: 0; }
+        a.card .arrow { float: right; color: #2563eb; font-weight: 700; }
+
+        footer {
+            text-align: center;
+            padding: 28px 24px;
+            font-size: 0.82rem;
+            color: #7a8fa8;
+        }
+
+        footer a { color: #7a8fa8; text-decoration: none; }
+        footer a:hover { color: #2563eb; }
+
+        @media (max-width: 600px) { header h1 { font-size: 1.6rem; } }
+
+        @media (prefers-color-scheme: dark) {
+            body { background: #0b1523; color: #c8d8ea; }
+            header { background: #07111f; }
+            a.card { background: #111e2e; border-color: #1e3044; }
+            a.card h2 { color: #e2eaf4; }
+            a.card p { color: #a8bdd4; }
+            footer { color: #4a6580; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="wordmark">Paycheck Debt Planner</div>
+    <h1>Paycheck Debt Planner</h1>
+    <p>The paycheck-first way to pay off debt. Tells you exactly what to pay each payday — all on your device.</p>
+</header>
+
+<main>
+    <div class="cards">
+        <a class="card" href="support.html">
+            <span class="arrow">&rarr;</span>
+            <h2>Support</h2>
+            <p>Getting started, App Lock, backups, subscriptions, and troubleshooting.</p>
+        </a>
+        <a class="card" href="privacy.html">
+            <span class="arrow">&rarr;</span>
+            <h2>Privacy Policy</h2>
+            <p>What the app stores, and why your financial data never leaves your device.</p>
+        </a>
+    </div>
+</main>
+
+<footer>
+    <p><a href="privacy.html">Privacy Policy</a> &nbsp;·&nbsp; <a href="support.html">Support</a></p>
+    <p style="margin-top: 8px;">© 2026 Paycheck Debt Planner</p>
+</footer>
+
+</body>
+</html>
